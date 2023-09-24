@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   .header{
+    text-align: center;
+    background-color: antiquewhite;
+   }
+   #menu{
+    height: 300px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    /* border: 2px solid green; */
+    justify-content: space-evenly;
+    /* margin: 0px 0px 0px 120px;
+     */
+   }
+   #menu div img{
+    height: 90px;
+    width: 100px
+   }
+   #btn{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 255, 0);
+      }
+   #menu div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 120px;
+    width: 140px;
+    
+   }
+   .corneer{
+    display: flex;
+   /* border: 2px solid red; */
+   justify-content: space-between;
+   }
+   #order{
+    display: none;
+    height: 300px;
+    width: 270px;
+    border: 2px solid yellow;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   }
+    </style>
+</head>
+<body>
+    <div class="header">
+   <h2>Welcome to Mc Donald's</h2> 
+   <h3>Menu</h3>
+    </div><div class="corneer">
+
+<div id="menu">
+     <div>
+   
+  <img src="https://img.freepik.com/premium-photo/amazing-delicious-cheese-burger_727939-299.jpg?w=2000" alt="">
+    <input type="checkbox" name="" id="">
+    <label for="">Burger</label>
+      </div>
+      <div>
+   
+        <img src="https://static.toiimg.com/thumb/54659021.cms?imgsize=275086&width=800&height=800" alt="">
+        <input type="checkbox" name="" id="">
+        <label for="">Fries</label>
+          </div>
+          <div>
+   
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGsh_N-NM7iIcEWSwpMByL4VZ1_y43hkdePg&usqp=CAU" alt="">
+            <input type="checkbox" name="" id="">
+            <label for="">Cold-Drink</label>
+              </div>
+              <div>
+   
+               <img src="https://img.freepik.com/free-vector/simple-cheese-isolated-cartoon_1308-124064.jpg?w=360" alt="">
+                    <input type="checkbox" name="" id="">
+                    <label for="">Cheese</label>
+                      </div>
+                      <div>
+   
+                        <img src="https://static.toiimg.com/thumb/53007558.cms?imgsize=518651&width=800&height=800" alt="">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Chicken</label>
+                          </div>
+
+
+                          <div>
+                            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dessert-main-image-molten-cake-0fbd4f2.jpg?quality=90&resize=500,454" alt="">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Desert</label>
+                          </div>
+ </div>
+   
+<div id="order">
+    <h3>Order Complete</h3>
+    <p>Your oder id is :<span id="oderid">12345</span></p>
+</div>
+</div>
+<div>
+    <button id="btn"
+    >Food Order</button>
+</div>
+</body>
+<script  src="./index.js"></script>
+</html>
